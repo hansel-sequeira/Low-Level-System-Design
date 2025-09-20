@@ -15,6 +15,9 @@
         <module>4_Lists</module>
         <module>5_ParkingLot</module>
         <module>6_Sets</module>
+        <module>7_Streams</module>
+        <module>8_MethodsAndConstructors</module>
+        <module>9_ExceptionHandling</module>
     </modules>
 
     <properties>

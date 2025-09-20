@@ -11,10 +11,7 @@ Constructors:
         Hence, constructors have the className as convention and no return type to distinguish ambiguity.
     -> why constructors cannot be final?
         : because there is no point in doing so. Constructors are an inherent property of a class. The constructor name
-         is same as class name. They cannot be inherited, so there's no point in making it final. Assuming it is inherited,
-         then the Parent() will be treated as a normal overridden 'method' in Child, since constructor in Child needs to be
-         named 'Child'. And if Parent() is a method, then it needs to have a return type -> so there's no scope whatsoever
-         of having parent constructors inherited.
+         is same as class name. They cannot be inherited, so there's no point in making it final.
     -> why constructors cannot be abstract?
         -> same reason as above, constructors are not inherited, and they are intrinsic to a class/abstract class.
             Besides, if the constructor were abstract and let's say the subclass were to inherit and override it,
@@ -28,7 +25,7 @@ Constructors:
         If the constructor were static, it can only access static variables, so there's no way to initialize the
         instance variables!
     -> can we define a constructor in an interface?
-           : No. Interfaces are not 'extending' by subclasses. They are 'implemented'. An interface is a contract, not
+           : No. Interfaces are not 'extended' by subclasses. They are 'implemented'. An interface is a contract, not
            a parent. So either ways it can't be instantiated, and on top of that, no one's there to call super() since it's super
            to no one.
      -> constructor chaining using this() and super()

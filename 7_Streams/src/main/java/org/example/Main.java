@@ -16,7 +16,6 @@ package org.example;
 
     -> No need to put data type in the lambda implementation.
     The original collection is not affected! You create a new collection out of the stream.
-
     -> whenever a terminal operation is invoked on a stream, that stream can't be reused later.
 
  */
@@ -30,20 +29,19 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
-        // List.of() returns an immutable list type. You can add a max of 10 elements if you use .of().
-        // No nulls allowed!
+        // List.of() returns an immutable list type. No nulls allowed!
         List<Integer> salaryList = new ArrayList<>(List.of(3000, 4100, 9000, 1000, 3500)); // salaryList is mutable though!
 
        List<Integer> arrayList = Arrays.asList(1, 2, 3); // Arrays.asList(n number of args) returns a List<T>
-        /*
-        Arrays.asList() creates a fixed-size list backed by the original array.
+        /*  this actually doesn't return an ArrayList but some internal class.
+        Arrays.asList() creates a fixed-size list backed by the original fixed sized array[].
         you can only mutate the existing elements via set(idx, elt), structural modifications like add(), remove()
         will throw an RTE. Nulls allowed.
          */
 
         Integer[] integerArray = {3000, 4100, 9000, 1000, 3500};
         // under the hood, compiler does integerArray = new Integer[4] and assigns the boxed value to the slots.
-        // so the int array resides on the stack.
+        // so the int array resides on the heap.
         // crucial functions when dealing with auto/unboxing: boxedObject.intValue(), Integer.valueOf(primitive).
         Integer xBoxed = 100;
         int x = xBoxed.intValue();
@@ -63,10 +61,10 @@ public class Main {
                 .collect(Collectors.toList());
 
         // reduce() produces an Optional<T> as output -> since there's no guarantee that the stream has atleast
-       // min/max(Comparator<T>) also produces an Optional<T>
-        // 2 elements to reduce!
+        // 2 elements to reduce! min/max(Comparator<T>) also produces an Optional<T>
         // peek() is an intermediate operation best used to peek at the intermediate state.
         // if you use forEach() which is terminating, it does not return anything!
+
         // toArray() if operating on a Stream<T> will return an Object[]/
         // toArray() if operating on a IntStream will return an integer[]
         // <..Stream<Integer..>.mapToInt(Integer::intValue).toArray() -> returns an int[]
