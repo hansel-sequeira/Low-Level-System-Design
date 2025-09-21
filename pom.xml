@@ -19,6 +19,7 @@
         <module>8_MethodsAndConstructors</module>
         <module>9_ATMMachine</module>
         <module>10_VendingMachine</module>
+        <module>11_ExceptionHandling</module>
     </modules>
 
     <properties>
