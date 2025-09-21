@@ -18,6 +18,7 @@
         <module>7_Streams</module>
         <module>8_MethodsAndConstructors</module>
         <module>9_ATMMachine</module>
+        <module>10_VendingMachine</module>
     </modules>
 
     <properties>

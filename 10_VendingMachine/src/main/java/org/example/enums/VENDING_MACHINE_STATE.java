@@ -1,0 +1,7 @@
+package org.example.enums;
+
+public enum VENDING_MACHINE_STATE {
+    INITIAL_STATE,
+    PROCESS_PAYMENT_STATE,
+    PRODUCT_SELECTED_STATE, DISPENSE_STATE
+}
