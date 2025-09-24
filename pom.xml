@@ -20,6 +20,8 @@
         <module>9_ATMMachine</module>
         <module>10_VendingMachine</module>
         <module>11_ExceptionHandling</module>
+        <module>12_Interfaces</module>
+        <module>13_CarRentalSystem</module>
     </modules>
 
     <properties>
