@@ -2,7 +2,6 @@ package org.example.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.example.enums.MoveType;
 
 @Getter
 @AllArgsConstructor
