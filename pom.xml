@@ -23,6 +23,7 @@
         <module>12_Interfaces</module>
         <module>13_CarRentalSystem</module>
         <module>14_Interfaces</module>
+        <module>14_Interfaces/15_TicTacToe</module>
     </modules>
 
     <properties>
