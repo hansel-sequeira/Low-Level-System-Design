@@ -25,6 +25,8 @@
         <module>14_Interfaces</module>
         <module>15_TicTacToe</module>
         <module>16_Classes</module>
+        <module>17_SingletonAndImmutable</module>
+        <module>ATMMock</module>
     </modules>
 
     <properties>

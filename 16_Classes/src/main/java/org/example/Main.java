@@ -89,7 +89,7 @@ public class Main {
 /*
 enums -> collection of constants (static final)
       -> They internally extend the Enum class, hence enums cant extend any class. They can implement interface.
-      -> Cannot be instantitated, constructor is private by default. Cannot override/add non-private constructors.
+      -> Cannot be instantiated, constructor is private by default. Cannot override/add non-private constructors.
       -> It can have variables, methods, private constructors;
       -> It can have abstract methods, but then all the constants need to implement that method
  */
@@ -98,7 +98,7 @@ enums -> collection of constants (static final)
         SUNDAY,
     MONDAY;
 
-    final int x = 5;
+    final int x = 5; // non-static field. Can only be accessed through an instance (DaysOfWeek.SUNDAY.x)
 }
 
 enum CustomEnum implements AnonymousInnerClassDemo{
@@ -127,7 +127,7 @@ enum CustomValueEnum {
         private int val;
         private String comment;
 
-        CustomValueEnum(int val, String comment) {
+        private CustomValueEnum(int val, String comment) {
            this.val = val;
            this.comment = comment;
        }
