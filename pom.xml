@@ -26,7 +26,7 @@
         <module>15_TicTacToe</module>
         <module>16_Classes</module>
         <module>17_SingletonAndImmutable</module>
-        <module>ATMMock</module>
+        <module>18_Generics</module>
     </modules>
 
     <properties>
