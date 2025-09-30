@@ -27,6 +27,7 @@
         <module>16_Classes</module>
         <module>17_SingletonAndImmutable</module>
         <module>18_Generics</module>
+        <module>19_InventoryManagementSystem</module>
     </modules>
 
     <properties>
