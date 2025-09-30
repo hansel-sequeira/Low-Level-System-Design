@@ -28,6 +28,7 @@
         <module>17_SingletonAndImmutable</module>
         <module>18_Generics</module>
         <module>19_InventoryManagementSystem</module>
+        <module>20_SnakeAndLadder</module>
     </modules>
 
     <properties>
