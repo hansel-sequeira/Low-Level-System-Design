@@ -38,6 +38,7 @@ Exception hierarchy:
                             -> IOException
                                 -> FileNotFoundException
                             -> SQLException
+                            -> InterruptedException
  */
 
 

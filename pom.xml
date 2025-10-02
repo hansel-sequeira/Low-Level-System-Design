@@ -29,6 +29,7 @@
         <module>18_Generics</module>
         <module>19_InventoryManagementSystem</module>
         <module>20_SnakeAndLadder</module>
+        <module>21_Multithreading_pt1</module>
     </modules>
 
     <properties>
