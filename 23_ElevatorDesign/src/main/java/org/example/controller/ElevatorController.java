@@ -27,5 +27,4 @@ public class ElevatorController {
         elevator.acceptRequest(floorNumber); // elevator will now service this request
         return elevator;
     }
-
 }
