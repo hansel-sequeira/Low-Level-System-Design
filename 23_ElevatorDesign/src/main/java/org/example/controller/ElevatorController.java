@@ -21,10 +21,11 @@ public class ElevatorController {
         this.elevatorDispatchStrategy = elevatorDispatchStrategy;
     }
 
-    public void acceptExternalRequest(int floorNumber, Direction direction) {
+    public Elevator acceptExternalRequest(int floorNumber, Direction direction) {
         ExternalRequest request = new ExternalRequest(floorNumber, direction);
         Elevator elevator = elevatorDispatchStrategy.dispatchElevator(elevatorList, request);
         elevator.acceptRequest(floorNumber); // elevator will now service this request
+        return elevator;
     }
 
 }
