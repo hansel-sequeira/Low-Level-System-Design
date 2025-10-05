@@ -31,6 +31,7 @@
         <module>20_SnakeAndLadder</module>
         <module>21_Multithreading_pt1</module>
         <module>22_Multithreading_pt2</module>
+        <module>23_ElevatorDesign</module>
     </modules>
 
     <properties>
